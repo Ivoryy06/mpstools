@@ -18,6 +18,10 @@
     .card-desc { font-size: 0.82rem; color: #c090a8; line-height: 1.5; }
     .card-tag { font-size: 0.72rem; color: #d4a0b8; margin-top: 6px; letter-spacing: 0.5px; }
     .section-label { font-size: 0.75rem; color: #d4a0b8; letter-spacing: 2px; text-transform: uppercase; width: 100%; max-width: 720px; margin-bottom: 10px; }
+    .timeline { width: 100%; max-width: 720px; background: #fdf0f5; border: 0.5px solid #f0c4d8; border-radius: 14px; padding: 1rem 1.2rem; margin-bottom: 2rem; display: grid; gap: 8px; }
+    .timeline-row { display: grid; grid-template-columns: 70px 1fr; gap: 10px; align-items: baseline; }
+    .timeline-year { font-size: 0.8rem; color: #b06080; font-weight: 600; }
+    .timeline-projects { font-size: 0.82rem; color: #c090a8; line-height: 1.5; }
     .card.muted { opacity: 0.6; cursor: default; pointer-events: none; }
     .note { font-size: 0.78rem; color: #d4a0b8; margin-bottom: 2rem; font-style: italic; }
     .footer { margin-top: 2.5rem; font-size: 0.78rem; color: #d4a0b8; }
@@ -33,6 +37,9 @@
       .card-tag { color: #a07088; }
       .note { color: #a07088; }
       .footer { color: #906878; }
+      .timeline { background: #3a1f2a; border-color: #6a3050; }
+      .timeline-year { color: #f0b0cc; }
+      .timeline-projects { color: #c090a8; }
     }
   </style>
 </head>
@@ -40,8 +47,28 @@
   <div class="hub">
     <p class="name">Ivory</p>
     <p class="title">Programmer · Videographer</p>
-    <p class="note">Built and tested locally before every push — not a vibe coder.</p>
+    <p class="note">Built and tested locally before every push — putting in my projects after years of self-use.</p>
     <div class="divider"></div>
+
+    <div class="section-label">Started in</div>
+    <div class="timeline">
+      <div class="timeline-row">
+        <span class="timeline-year">2023</span>
+        <span class="timeline-projects">WhatRemains, StyleMirror, Unsent</span>
+      </div>
+      <div class="timeline-row">
+        <span class="timeline-year">2024</span>
+        <span class="timeline-projects">Raycaster</span>
+      </div>
+      <div class="timeline-row">
+        <span class="timeline-year">2025</span>
+        <span class="timeline-projects">BlackboxD, mend, StyleMirror</span>
+      </div>
+      <div class="timeline-row">
+        <span class="timeline-year">2026</span>
+        <span class="timeline-projects">MPS, mend</span>
+      </div>
+    </div>
 
     <div class="section-label">Live</div>
     <div class="grid">
@@ -80,7 +107,7 @@
         <span class="card-desc">A raycaster engine with mouse look.</span>
         <span class="card-tag">C · SDL2</span>
       </a>
-      <a class="card" href="https://github.com/Ivoryy06/mend" target="_blank">
+      <a class="card" href="https://ivoryy06.github.io/mend" target="_blank">
         <span class="card-name">mend</span>
         <span class="card-desc">AI-assisted system recovery, backup, and health monitoring.</span>
         <span class="card-tag">Python · Kiro CLI · systemd</span>
