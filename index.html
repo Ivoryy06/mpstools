@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ivory</title>
+  <title>MPSTools</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: system-ui, sans-serif; background: #fff5f8; min-height: 100vh; }
@@ -18,9 +18,6 @@
     .card-desc { font-size: 0.82rem; color: #c090a8; line-height: 1.5; }
     .card-tag { font-size: 0.72rem; color: #d4a0b8; margin-top: 6px; letter-spacing: 0.5px; }
     .section-label { font-size: 0.75rem; color: #d4a0b8; letter-spacing: 2px; text-transform: uppercase; width: 100%; max-width: 720px; margin-bottom: 10px; }
-    .card.muted { opacity: 0.6; cursor: default; pointer-events: none; }
-    .note { font-size: 0.78rem; color: #d4a0b8; margin-bottom: 2rem; font-style: italic; }
-    .footer { margin-top: 2.5rem; font-size: 0.78rem; color: #d4a0b8; }
     @media (prefers-color-scheme: dark) {
       body { background: #1a0d12; }
       .name { color: #f0a0c0; }
@@ -31,91 +28,30 @@
       .card-name { color: #f0b0cc; }
       .card-desc { color: #c090a8; }
       .card-tag { color: #a07088; }
-      .note { color: #a07088; }
-      .footer { color: #906878; }
     }
   </style>
 </head>
 <body>
   <div class="hub">
-    <p class="name">Ivory</p>
-    <p class="title">Programmer · Videographer</p>
-    <p class="note">Built and tested locally before every push — putting in my projects after years of self-use.</p>
+    <p class="name">MPSTools</p>
+    <p class="title">Media & System Utilities</p>
     <div class="divider"></div>
 
-    <div class="section-label">Live</div>
+    <div class="section-label">Tools</div>
     <div class="grid">
-      <a class="card" href="https://ivoryy06.github.io/WhatRemains" target="_blank">
-        <span class="card-name">WhatRemains</span>
-        <span class="card-desc">Save your memories before graduation.</span>
-        <span class="card-desc">Started in 2023</span>
-        <span class="card-tag">Vanilla JS · Offline</span>
-      </a>
-      <a class="card" href="https://ivoryy06.github.io/mps" target="_blank">
-        <span class="card-name">MPS</span>
-        <span class="card-desc">Since generation 17, preserving every generation memories.</span>
-        <span class="card-desc">Started in 2026</span>
-        <span class="card-tag">HTML · SCSS · C++</span>
-      </a>
-      <a class="card" href="https://ivoryy06.github.io/Echo/" target="_blank">
-        <span class="card-name">Echo</span>
-        <span class="card-desc">Hear yourself from the past. (Beta)</span>
-        <span class="card-tag">React · Flask · Groq</span>
-      </a>
-      <a class="card" href="https://ivoryy06.github.io/BlackboxD" target="_blank">
-        <span class="card-name">BlackboxD</span>
-        <span class="card-desc">Record your activity without the cost.</span>
+      <a class="card" href="https://ivoryy06.github.io/Storganizer/dashboard/" target="_blank">
+        <span class="card-name">Storganizer</span>
+        <span class="card-desc">Fast duplicate finder for media-aware cleanup.</span>
         <span class="card-desc">Started in 2025</span>
-        <span class="card-tag">Python · Go · Rust · Lua</span>
-      </a>
-      <a class="card" href="https://ivoryy06.github.io/Stylemirror" target="_blank">
-        <span class="card-name">StyleMirror</span>
-        <span class="card-desc">Your voice, continued.</span>
-        <span class="card-desc">Started in 2023, rebuilt in 2025</span>
-        <span class="card-tag">React · Flask · SQLite · Groq</span>
-      </a>
-      <a class="card" href="https://ivoryy06.github.io/Unsent" target="_blank">
-        <span class="card-name">Unsent</span>
-        <span class="card-desc">Hold the feeling until you're ready.</span>
-        <span class="card-desc">Started in 2023</span>
-        <span class="card-tag">React · Flask · SQLite · Groq</span>
-      </a>
-      <a class="card" href="https://github.com/Ivoryy06/Raycaster" target="_blank">
-        <span class="card-name">Raycaster</span>
-        <span class="card-desc">A raycaster engine with mouse look.</span>
-        <span class="card-desc">Started in 2024</span>
-        <span class="card-tag">C · SDL2</span>
-      </a>
-      <a class="card" href="https://ivoryy06.github.io/mend" target="_blank">
-        <span class="card-name">mend</span>
-        <span class="card-desc">AI-assisted system recovery, backup, and health monitoring.</span>
-        <span class="card-desc">Started in 2025, continued in 2026</span>
-        <span class="card-tag">Python · Kiro CLI · systemd</span>
+        <span class="card-tag">Go · pHash · GitHub Actions</span>
       </a>
       <a class="card" href="https://github.com/Ivoryy06/cardnuke" target="_blank">
-        <span class="card-name">cardnuke</span>
+        <span class="card-name">cardnuker</span>
         <span class="card-desc">Wipe, recover, verify, and restore SD/USB media safely.</span>
         <span class="card-desc">Started in 2026</span>
-        <span class="card-tag">Python · Bash · PhotoRec</span>
+        <span class="card-tag">Python · Bash · Native CLI</span>
       </a>
     </div>
-
-    <div class="section-label" style="margin-top: 2rem;">Upcoming</div>
-    <div class="grid">
-      
-      <div class="card muted">
-        <span class="card-name">Mask</span>
-        <span class="card-desc">See who you become with different people.</span>
-        <span class="card-tag">Coming soon</span>
-      </div>
-      <div class="card muted">
-        <span class="card-name">Void</span>
-        <span class="card-desc">A privacy-focused browser with Tor integration and fingerprint resistance.</span>
-        <span class="card-tag">Rust · GTK · WebKit</span>
-      </div>
-    </div>
-
-    <p class="footer">github.com/Ivoryy06</p>
   </div>
 </body>
 </html>
